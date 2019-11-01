@@ -23,7 +23,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.nickname_text).setOnClickListener {
             updateNickname(it)
         }
-    }private fun addNickname(view: View) {
+
+    }
+
+    private fun addNickname(view: View) {
         val editText = findViewById<EditText>(R.id.nickname_edit)
         val nicknameTextView = findViewById<TextView>(R.id.nickname_text)
         nicknameTextView.text = editText.text

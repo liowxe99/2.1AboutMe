@@ -15,7 +15,6 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name"
         android:textAlignment="center"
         app:fontFamily="@font/roboto"
         tools:text="@string/name"
@@ -25,11 +24,11 @@
         android:id="@+id/nickname_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="password"
         android:ems="10"
         android:hint="@string/what_is_your_nickname"
         android:inputType="textPersonName"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/done_button"
@@ -49,9 +48,8 @@
         android:textAlignment="center"
         android:visibility="gone"
         android:text=""
-        android:onClick="clickHandlerFunction"
         android:background="@color/colorAccent"
-        android:paddingBottom="@dimen/small_padding"/>/>
+        android:paddingBottom="@dimen/small_padding"/>
 
     <ImageView
         android:id="@+id/star_image"
